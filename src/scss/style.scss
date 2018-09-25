@@ -13,22 +13,26 @@
 @import "mixin";
 @import "base";
 
-
 // ----------------------------------------------------------
 // Atomic Design
 // ----------------------------------------------------------
 
-//Atoms
-@import "0_atoms/atoms";
+// //Atoms
+// @import "0_atoms/atoms";
+//
+// //Molecules
+// @import "1_molecules/molecules";
+//
+// //Organisms
+// @import "2_organisms/organisms";
+//
+// //Templates
+// @import "3_templates/templates";
+//
+// //Pages
+// @import "4_pages/pages";
 
-//Molecules
-@import "1_molecules/molecules";
 
-//Organisms
-@import "2_organisms/organisms";
-
-//Templates
-@import "3_templates/templates";
-
-//Pages
-@import "4_pages/pages";
+#app li {
+    span.done { text-decoration: line-through; }
+}

@@ -1,17 +1,20 @@
 <template>
-    <div id="app">
+    <div id="app" style="padding: 20px 20px 100px;">
         <img src="../images/logo.png">
-        <HelloWorld />
+        <!-- <HelloWorld /> -->
+        <Todo />
     </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import Todo from './components/Todo'
 
 export default {
     name: 'App',
     components: {
-        HelloWorld
+        HelloWorld,
+        Todo
     }
 }
 </script>
