@@ -1,6 +1,10 @@
 <template>
     <div class="todo">
         <h1>Bitcoin APP</h1>
+        <p>{{ message }}</p>
+        <p>{{ reversedMessage }}</p>
+
+        <hr>
 
         <section v-if="hasError">
             Error. {{ hasError }}
@@ -12,7 +16,7 @@
             <div v-else>
                 <ul>
                     <li v-for="(rate, currency) in bpi">
-                        {{ currency }} : {{ rate.rate_float | currencyDecumal }}
+                        {{ currency }} : {{ rate.rate_float | currencyDecumal | ToLocaleString }}
                     </li>
                 </ul>
             </div>
@@ -28,7 +32,8 @@ export default {
         return {
             bpi: null,
             hasError: false,
-            loading: true
+            loading: true,
+            message: "abcdefg !"
         }
     },
     mounted: function() { // componentDidMount
@@ -56,8 +61,16 @@ export default {
         // setInterval( Fetch.bind(this), 5000)
     },
     filters: {
-        currencyDecumal(value) {
-            return value.toFixed(2)
+        // currencyDecumal(value) {
+        //     return value.toFixed(2)
+        // },
+        ToLocaleString(value) {
+            return Number(value).toLocaleString()
+        }
+    },
+    computed: {
+        reversedMessage: function() {
+            return this.message.split("").reverse().join("")
         }
     }
 }

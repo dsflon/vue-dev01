@@ -3,21 +3,24 @@
         <img src="../images/logo.png">
         <!-- <HelloWorld /> -->
         <!-- <Todo /> -->
-        <bitcoin />
+        <!-- <bitcoin /> -->
+        <Tax />
     </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld'
 // import Todo from './components/Todo'
-import bitcoin from './components/bitcoin'
+// import bitcoin from './components/bitcoin'
+import Tax from './components/Tax'
 
 export default {
     name: 'App',
     components: {
         // HelloWorld,
         // Todo,
-        bitcoin
+        // bitcoin,
+        Tax
     }
 }
 </script>
