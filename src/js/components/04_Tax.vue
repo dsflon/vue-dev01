@@ -29,7 +29,6 @@ export default {
                 return parseInt(this.basePrice * 1.08)
             },
             set: function(taxIncludedPrice) {
-                console.log(taxIncludedPrice);
                 this.basePrice = Math.ceil(taxIncludedPrice / 1.08)
             }
         }

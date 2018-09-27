@@ -4,15 +4,23 @@
         <!-- <HelloWorld /> -->
         <!-- <Todo /> -->
         <!-- <bitcoin /> -->
-        <Tax />
+        <!-- <Tax /> -->
+        <!-- <Meter /> -->
+        <!-- <Watcher /> -->
+        <!-- <WatcherDeep /> -->
+        <QiitaApi />
     </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld'
-// import Todo from './components/Todo'
-// import bitcoin from './components/bitcoin'
-import Tax from './components/Tax'
+import HelloWorld from './components/01_HelloWorld'
+import Todo from './components/02_Todo'
+import bitcoin from './components/03_bitcoin'
+import Tax from './components/04_Tax'
+import Meter from './components/05_Meter'
+import Watcher from './components/06_Watcher'
+import WatcherDeep from './components/07_Watcher_Deep'
+import QiitaApi from './components/08_Qiita_api'
 
 export default {
     name: 'App',
@@ -20,7 +28,11 @@ export default {
         // HelloWorld,
         // Todo,
         // bitcoin,
-        Tax
+        // Tax,
+        // Meter
+        // Watcher,
+        // WatcherDeep,
+        QiitaApi
     }
 }
 </script>

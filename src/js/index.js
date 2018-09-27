@@ -8,7 +8,7 @@ Vue.filter("currencyDecumal", function(value) {
     return value.toFixed(2)
 })
 
-new Vue({
+var app = new Vue({
   el: '#app',
   template: '<App/>',
   components: { App },
