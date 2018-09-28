@@ -35,7 +35,6 @@ export default {
     },
     watch: {
         keyword: function(newKeyword,oldKeyword) {
-            console.log(newKeyword);
             this.message = "Wainting for you to stop typing..."
             // this.debouncedGetAnswer()
 

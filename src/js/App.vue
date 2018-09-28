@@ -1,6 +1,6 @@
 <template>
     <div id="app" style="padding: 20px 20px 100px;">
-        <img src="../images/logo.png">
+        <figure class="f-mb20"><img src="../images/logo.png"></figure>
         <!-- <HelloWorld /> -->
         <!-- <Todo /> -->
         <!-- <bitcoin /> -->
@@ -8,7 +8,9 @@
         <!-- <Meter /> -->
         <!-- <Watcher /> -->
         <!-- <WatcherDeep /> -->
-        <QiitaApi />
+        <!-- <QiitaApi /> -->
+        <!-- <ClassBind /> -->
+        <StyleBind />
     </div>
 </template>
 
@@ -21,6 +23,8 @@ import Meter from './components/05_Meter'
 import Watcher from './components/06_Watcher'
 import WatcherDeep from './components/07_Watcher_Deep'
 import QiitaApi from './components/08_Qiita_api'
+import ClassBind from './components/09_Class_bind'
+import StyleBind from './components/10_Style_bind'
 
 export default {
     name: 'App',
@@ -32,7 +36,9 @@ export default {
         // Meter
         // Watcher,
         // WatcherDeep,
-        QiitaApi
+        // QiitaApi,
+        // ClassBind,
+        StyleBind
     }
 }
 </script>
