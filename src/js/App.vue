@@ -10,7 +10,8 @@
         <!-- <WatcherDeep /> -->
         <!-- <QiitaApi /> -->
         <!-- <ClassBind /> -->
-        <StyleBind />
+        <!-- <StyleBind /> -->
+        <OnEvent />
     </div>
 </template>
 
@@ -25,6 +26,7 @@ import WatcherDeep from './components/07_Watcher_Deep'
 import QiitaApi from './components/08_Qiita_api'
 import ClassBind from './components/09_Class_bind'
 import StyleBind from './components/10_Style_bind'
+import OnEvent from './components/11_event'
 
 export default {
     name: 'App',
@@ -38,7 +40,8 @@ export default {
         // WatcherDeep,
         // QiitaApi,
         // ClassBind,
-        StyleBind
+        // StyleBind,
+        OnEvent
     }
 }
 </script>
