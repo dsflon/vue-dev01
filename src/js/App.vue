@@ -11,7 +11,8 @@
         <!-- <QiitaApi /> -->
         <!-- <ClassBind /> -->
         <!-- <StyleBind /> -->
-        <OnEvent />
+        <!-- <OnEvent /> -->
+        <Form />
     </div>
 </template>
 
@@ -27,6 +28,7 @@ import QiitaApi from './components/08_Qiita_api'
 import ClassBind from './components/09_Class_bind'
 import StyleBind from './components/10_Style_bind'
 import OnEvent from './components/11_event'
+import Form from './components/12_form'
 
 export default {
     name: 'App',
@@ -41,7 +43,8 @@ export default {
         // QiitaApi,
         // ClassBind,
         // StyleBind,
-        OnEvent
+        // OnEvent,
+        Form
     }
 }
 </script>
