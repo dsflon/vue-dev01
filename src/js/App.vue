@@ -12,7 +12,8 @@
         <!-- <ClassBind /> -->
         <!-- <StyleBind /> -->
         <!-- <OnEvent /> -->
-        <Form />
+        <!-- <Form /> -->
+        <Transition />
     </div>
 </template>
 
@@ -29,6 +30,7 @@ import ClassBind from './components/09_Class_bind'
 import StyleBind from './components/10_Style_bind'
 import OnEvent from './components/11_event'
 import Form from './components/12_form'
+import Transition from './components/13_transition.vue'
 
 export default {
     name: 'App',
@@ -44,7 +46,8 @@ export default {
         // ClassBind,
         // StyleBind,
         // OnEvent,
-        Form
+        // Form,
+        Transition
     }
 }
 </script>
