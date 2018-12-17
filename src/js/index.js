@@ -1,15 +1,23 @@
 import Vue from 'vue';
 import App from './App';
 
-Vue.config.productionTip = false;
+// import Slick from 'vue-slick';
 
-//グローバルフィルター
-Vue.filter("currencyDecumal", function(value) {
-    return value.toFixed(2)
-})
+// Vue.config.productionTip = false;
+//
+// //グローバルフィルター
+// Vue.filter("currencyDecumal", function(value) {
+//     return value.toFixed(2)
+// })
+
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
 
 var app = new Vue({
   el: '#app',
   template: '<App/>',
-  components: { App },
+  components: {
+      App,
+      // Slick
+  },
 });
